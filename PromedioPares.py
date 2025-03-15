@@ -7,5 +7,5 @@ for i in range(n):
     if m%2 == 0:
         suma = suma + m
         par = par +1
-        promedio = suma // par
+        promedio = float(suma // par)
 print("El promedio de los numeros pares que ingreso es: ",promedio)
