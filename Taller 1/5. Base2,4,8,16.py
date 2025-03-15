@@ -16,3 +16,5 @@ if b == 2 or 4 or 8 or 16:
           cv = r + cv
           n = n//b
     print("La conversion es: ",cv)
+else:
+    print("La base no es valida, ingrese una que sea 2,4,8 o 16")
