@@ -1,7 +1,7 @@
 import random as rnd
 X = []
 Y = []
-n = 2
+n = int(input("Ingresa el numero de valores: "))
 smp = 0
 smx = 0
 smy = 0
@@ -28,6 +28,11 @@ mps = smx * smy
 smx3 = smx ** 2
 #6)Reemplazamos en la formula, para hayar la PENDIENTE de la recta
 m = (n*smp - mps) / (n*smx2 - smx3)
+#7)Reemplazamos en la formula, para hayyar la B de la recta
+b = (smy*smx2 - smx*smp) / (n*smx2 - smx3)
 print(X)
 print(Y)
-print(m)
+if b < 0:
+    print(f"La formula de la recta es Y = {m} X + {b}")
+else:
+    print(f"La formula de la recta es Y = {m} X  {b} ")
